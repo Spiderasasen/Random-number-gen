@@ -11,10 +11,15 @@ int get_number() {
     return number;
 }
 
+//guessing area
+void guess(int number) {
+    printf("%d", number);
+}
+
 
 // main
 int main() {
     int number = get_number();
-    printf("%d",number);
+    guess(number);
     return 0;
 }
