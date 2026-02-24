@@ -14,7 +14,6 @@ int get_number() {
 
 // main
 int main() {
-    printf("Hello world\n");
     int number = get_number();
     printf("%d",number);
     return 0;
