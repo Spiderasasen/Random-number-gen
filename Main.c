@@ -19,6 +19,12 @@ void guess(int number) {
         printf("Guess a number between 1 and 25.\n");
         scanf("%d", &guess);
 
+        //checking if the number is higher or lower then the range
+        if (guess < 0 || guess > 25) {
+            printf("Your guess, (%d) is out of range, please enter another number that is in range\n", guess);
+            continue;
+        }
+
         //checking if the user was correct or not
         if (guess == number) {
             printf("You are correct\n");
