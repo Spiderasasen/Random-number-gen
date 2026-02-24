@@ -13,7 +13,23 @@ int get_number() {
 
 //guessing area
 void guess(int number) {
-    printf("%d", number);
+    int guess;
+    while (guess != number) {
+        //asking the player for a guess
+        printf("Guess a number between 1 and 25.\n");
+        scanf("%d", &guess);
+
+        //checking if the user was correct or not
+        if (guess == number) {
+            printf("You are correct\n");
+        }
+        else if (guess < number) {
+            printf("Your guess is too low\n");
+        }
+        else if (guess > number) {
+            printf("Your guess is too high\n");
+        }
+    }
 }
 
 
